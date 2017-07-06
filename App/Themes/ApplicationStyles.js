@@ -9,7 +9,8 @@ const ApplicationStyles = {
   screen: {
     mainContainer: {
       flex: 1,
-      backgroundColor: Colors.transparent
+      backgroundColor: Colors.background,
+      paddingTop: Metrics.doubleBaseMargin
     },
     backgroundImage: {
       position: 'absolute',
@@ -24,18 +25,18 @@ const ApplicationStyles = {
       backgroundColor: Colors.transparent
     },
     section: {
-      margin: Metrics.section,
-      padding: Metrics.baseMargin
+      marginHorizontal: Metrics.doubleBaseMargin,
+      marginVertical: Metrics.baseMargin
     },
     sectionText: {
       ...Fonts.style.normal,
       paddingVertical: Metrics.doubleBaseMargin,
-      color: Colors.snow,
+      color: Colors.text,
       marginVertical: Metrics.smallMargin,
       textAlign: 'center'
     },
     subtitle: {
-      color: Colors.snow,
+      color: Colors.text,
       padding: Metrics.smallMargin,
       marginBottom: Metrics.smallMargin,
       marginHorizontal: Metrics.smallMargin
@@ -44,36 +45,13 @@ const ApplicationStyles = {
       ...Fonts.style.h2,
       fontSize: 14,
       color: Colors.text
+    },
+    buttonContainer: {
+      flexDirection: 'row',
+      justifyContent: 'space-around',
+      alignItems: 'center',
+      paddingVertical: Metrics.baseMargin
     }
-  },
-  darkLabelContainer: {
-    padding: Metrics.smallMargin,
-    paddingBottom: Metrics.doubleBaseMargin,
-    borderBottomColor: Colors.border,
-    borderBottomWidth: 1,
-    marginBottom: Metrics.baseMargin
-  },
-  darkLabel: {
-    fontFamily: Fonts.type.bold,
-    color: Colors.snow
-  },
-  groupContainer: {
-    margin: Metrics.smallMargin,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center'
-  },
-  sectionTitle: {
-    ...Fonts.style.h4,
-    color: Colors.coal,
-    backgroundColor: Colors.ricePaper,
-    padding: Metrics.smallMargin,
-    marginTop: Metrics.smallMargin,
-    marginHorizontal: Metrics.baseMargin,
-    borderWidth: 1,
-    borderColor: Colors.ember,
-    alignItems: 'center',
-    textAlign: 'center'
   }
 }
 

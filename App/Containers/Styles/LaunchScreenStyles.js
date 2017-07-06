@@ -1,10 +1,12 @@
 import { StyleSheet } from 'react-native'
-import { Metrics, ApplicationStyles } from '../../Themes/'
+import { Colors, Metrics, ApplicationStyles } from '../../Themes/'
 
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
-  container: {
-    paddingBottom: Metrics.baseMargin
+  contentContainer: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   logo: {
     marginTop: Metrics.doubleSection,
@@ -14,5 +16,8 @@ export default StyleSheet.create({
   },
   centered: {
     alignItems: 'center'
+  },
+  activeButton: {
+    color: Colors.impress
   }
 })
